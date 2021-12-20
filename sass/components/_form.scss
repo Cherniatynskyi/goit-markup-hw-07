@@ -1,0 +1,131 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form-field {
+    display: inline-flex;
+    position: relative;
+
+    margin-top: 28px;
+}
+.form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+
+    padding-left: 42px;
+
+    transition: border-color $animation;
+    &:focus {
+        border-color: $minor-text-color;
+    }
+}
+.form-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 12px;
+    line-height: 1.16;
+    color: $second-text-color;
+    letter-spacing: 0.01em;
+    cursor: text;
+
+    padding: 0 27px 0 27px;
+
+    transition: transform $animation;
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translate(-42px, -35px);
+    cursor: default;
+}
+.form-input:focus ~ .form-icon {
+    fill: $minor-text-color;
+}
+.form-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: currentColor;
+
+    transition: fill $animation;
+}
+.comment-text {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+}
+.comment-label {
+    display: inline-flex;
+    float: left;
+
+    font-size: 12px;
+    line-height: 1.16;
+    color: $second-text-color;
+    letter-spacing: 0.01em;
+
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.comment-text:focus {
+    border: 1px solid $minor-text-color;
+}
+.close-button-conatainer {
+    display: flex;
+    justify-content: end;
+}
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.checkbox {
+    -webkit-appearance: none;
+}
+.checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $second-text-color;
+    margin-left: 8px;
+    margin-bottom: -1px;
+}
+.checkbox-icon {
+    width: 15px;
+    height: 15px;
+}
+.checkbox:checked + .checkbox-icon {
+    fill: $minor-text-color;
+    background-image: url('../img/icon-check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    border: $minor-text-color;
+}
+.contract {
+    color: $minor-text-color;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-button {
+    width: 200px;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}

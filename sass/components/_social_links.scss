@@ -1,0 +1,37 @@
+.team-socials-link-list {
+    display: flex;
+    padding: 16px 32px 30px 32px;
+    align-items: center;
+    justify-content: center;
+}
+.team-social-link-block {
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.team-social-link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-color: $nav-bg_text-color;
+    color: $icon-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color $animation, color $animation;
+
+    &:hover,
+    &:focus {
+        background-color: $minor-text-color;
+        color: $nav-bg_text-color;
+    }
+}
+.team-social-icon {
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+}
