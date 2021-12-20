@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
-    color: var(--main-color);
+    color: var(--main-text-color);
 }
 .hidden-title {
     width: 1px;
@@ -49,14 +49,8 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
 }
-.logo2 {
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.38;
+.logo-reverse {
     color: var(--section-bg-middle-color);
-    font-family: Raleway;
-    letter-spacing: 0.03em;
-    cursor: pointer;
 }
 .logo-span {
     color: var(--minor-text-color);
